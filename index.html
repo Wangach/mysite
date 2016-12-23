@@ -11,6 +11,11 @@
   <script>
     function startFunc(){
     var ask = prompt("What Is Your Name?");
+      if(ask == '' || ask == null) {
+         alert("You Must Fill A Valid Name!");
+        return false;
+        location.reload();
+         }
     }
   
     
